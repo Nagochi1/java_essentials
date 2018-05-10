@@ -104,7 +104,12 @@ public class Input {
 		
 	}
 
-
+	public static int getIntegerInput(int from, int to) {
+		
+		
+		
+		return -1;
+	}
 
 
 }

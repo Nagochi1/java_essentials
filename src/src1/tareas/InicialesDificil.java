@@ -7,7 +7,7 @@ public class InicialesDificil {
 	{
 		System.out.print("Ingrese su nombre completo: " );
 		String nombres = Input.get_string();
-		String[] arrayNombres = nombres.split(" ");
+		String[] arrayNombres = nombres.split("\\s+ ");
 		String n;
 	 
 		System.out.print("Las iniciales del nombre ingresado son: ");

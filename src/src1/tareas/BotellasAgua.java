@@ -10,10 +10,16 @@ public class BotellasAgua {
 		int bot = 12;
 		int resultado;
 		
-		resultado = num * bot;
+		//Valida que el número digitado no sea un número negativo
+				while(num < 0) 
+				{
+					Input.print("Número no válido, digite un número mayor que cero: ");
+					num = Input.get_int();
+				}
 		
-		Input.print("Ud gasta "+resultado+" botellas de agua al ducharse durante ese tiempo."+ "\n");
-			
+		resultado = num * bot;
+		Input.print("Ud gasta "+resultado+" botellas de agua al ducharse durante "+ num + " minutos."+ "\n");
+	
 	}
 
 }
